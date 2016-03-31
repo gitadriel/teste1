@@ -1,0 +1,190 @@
+.btnmenu{
+
+          background: rgba(222, 210, 210, 0.44);
+
+   
+   border-width: 0px;
+   border-right-width:0px;
+   border-bottom-width:1px;
+   border-bottom-color: #B5B5B5; 
+   border-left-width:0px;
+ 
+}
+
+.btnsubmenu{
+
+    background: #4F4F4F;
+
+   
+   border-width: 0px;
+   border-right-width:0px;
+   border-bottom-width:1px;
+   border-bottom-color: #B5B5B5; 
+   border-left-width:0px;
+   position: absolute;
+    top: 20;
+
+}
+
+
+h2 {
+
+	    top: 5;
+    	position: absolute;
+    	left: 60%;
+    	color: #dedede;
+
+
+}
+
+.btn1 {
+
+
+	    position: absolute;
+    	top: 100;
+    	left: 90%;
+}
+
+.btn2 {
+
+
+	    position: absolute;
+    	top: 100;
+    	left: 80%;
+}
+
+
+.btnON {
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  font-family: Arial;
+  color: #fffcff;
+  font-size: 50px;
+  background: #5ed68e;
+  padding: 20px 80px 20px 80px;
+  border: solid #d3dde3 3px;
+  text-decoration: none;
+    position: absolute;
+    top: 15%;
+        left: 33%;
+}
+
+#LigarLed1 {
+position: absolute;
+top: 38%;
+
+}
+
+
+
+.btnOFF {
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  font-family: Arial;
+  color: #fffcff;
+  font-size: 50px;
+  background: #DE425F;
+  padding: 20px 80px 20px 80px;
+  border: solid #d3dde3 3px;
+
+	position: absolute;
+       top: 15%;
+    left: 63%;
+}
+
+
+#DesligarLed1 {
+  position: absolute;
+  top: 38%;
+
+  
+}
+
+
+
+label {
+
+  color: aliceblue;
+    position: absolute;
+    top: 5%;
+    font-size: 70;
+    left: 33%;
+
+}
+
+#labellampada2{
+
+  position: absolute;
+    top: 28%;
+}
+
+#conteudolampada{
+
+background: #f7607c;
+
+}
+
+.hr{
+      padding: 62;
+    color: #D81010;
+    background: rgba(253, 253, 253, 0.18);
+    width: 56%;
+    float: left;
+    position: absolute;
+    top: 55;
+    left: 30%;
+}
+
+#hr1--{
+
+top: 186;
+
+}
+
+
+body {
+
+}
+
+#temperatura{
+position: absolute;
+top: 23%
+
+}
+
+
+#dia{
+  position: absolute;
+top: 3%
+
+
+}
+
+#hora{
+  position: absolute;
+  top: 12%;
+    left: 61%;
+
+}
+
+#relogio{
+
+
+      position: absolute;
+    font-size: 70;
+    left: 33%;
+    top: 12%;
+    color: aliceblue;
+}
+
+#graus{
+
+
+      font-size: 250;
+    color: aliceblue;
+    position: absolute;
+    top: 27%;
+    left: 38%;
+}

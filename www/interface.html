@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>SMART HOME</title>
+</head>
+<meta charset="UTF-08">
+
+
+
+<LINK href="css/interface.css" rel="stylesheet" type="text/css" />
+<LINK href="css/flat-ui.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all">
+
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/ard.js"></script>
+<script type="text/javascript" src="js/arest.js"></script>
+
+
+</script>
+
+
+
+<body>
+
+<table style="width:100%">
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+  
+<div class="mainContainer">
+
+<div class="title">TESTE COM JS</div>
+
+<div class="buttonBlock"><span class="buttonTitle">CONTROLE</span>
+
+        <button class="btn btn-block btn-lg btn-primary" type="button" id="LigarLed" onClick="AcenderApagar(this.id)">On</button>
+        <button class="btn btn-block btn-lg btn-danger" type="button" id="DesligarLed" onClick="AcenderApagar(this.id)">Off</button>
+        
+        <div class="status" id="status">Offline</div>
+
+</div>
+
+</div>
+
+<div class="switch__container">
+  <input id="switch-shadow" class="switch switch--shadow" type="checkbox"  name="ok" onClick="verificaChecks()">
+  <label for="switch-shadow"></label>
+</div>
+
+<nav id="menu">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Produtos</a></li>
+		<li><a href="#">Missão</a></li>
+		<li><a href="#">Links</a></li>
+		<li><a href="#">Contato</a></li>
+	</ul>
+</nav>
+
+</body>
+
+</html>

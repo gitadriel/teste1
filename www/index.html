@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title>Menu</title>
+</head>
+<LINK href="css.css" rel="stylesheet" type="text/css" />
+
+
+<body background="image/fundo.jpg" onload="horas()"><div id="relogio"></div></body>
+<meta charset="UTF-8">
+<table style="width:100%" >
+  <tr>
+
+  			
+		    <td style="width:17%"  ><button class="btnmenu" onclick="return trocar(submenusala,submenuquarto,conteudolampada);"><img src="image/tv.png"></button></td>
+		   
+		    
+
+		  	 
+			<td style="width:17%" rowspan="3" >
+			    <div id="submenusala" style="display:none"   >
+			    	<button class="btnmenu" onclick="return trocar(conteudolampada,submenusala);" ><img src="image/lampada.png"></button><br>
+			     	<button class="btnmenu"><img src="image/AR.png"></button>
+			     	<button class="btnmenu"><img src="image/controletv.png"></button>
+
+
+	  			</div>
+
+	  			
+			    <div id="submenuquarto" style="display:none">
+			    	<button class="btnmenu"><img src="image/lampada.png"></button><br>
+			     	<button class="btnmenu"><img src="image/AR.png"></button>
+
+
+	  			</div>
+	  		</td>
+	  		
+		    
+		    <td style="width:100%" rowspan="5" >
+		    	<form id="conteudolampada" style="display:none" >
+
+			    	<label >Lâmpada 1</label>
+				    	<!--<input type="button" class="btnON" id="LigarLed" onClick="AcenderApagar(this.id)" value="ON">
+		        		<input type="button" class="btnOFF" id="DesligarLed" onClick="AcenderApagar(this.id)" value="OFF">-->
+		        		<button class="btnON"id="LigarLed" onClick="AcenderApagar(this.id)" >ON</button>
+	        			<button class="btnOFF" id="DesligarLed" onClick="AcenderApagar(this.id)">OFF</button>	
+	        	<!--hr-->	
+	        	<div>
+	        	<label id="labellampada2">Lâmpada 2</label>
+			    	<button class="btnON"id="LigarLed1" onClick="AcenderApagar(this.id)" >ON</button>
+	        		<button class="btnOFF" id="DesligarLed1" onClick="AcenderApagar(this.id)">OFF</button>
+	        		</div>	
+
+	       		</form>
+
+
+	       		<form id="telainicial">
+	       		<script type="text/javascript">function horas(){camada = document.getElementById('relogio');hoje = new Date();hora = hoje.getHours();if(hora<=9){hora = "0" + hora;}minuto = hoje.getMinutes();if(minuto<=9){minuto = "0" + minuto;}segundo = hoje.getSeconds();if(segundo<=9){segundo = "0" + segundo;}camada.innerHTML = hora + ":" + minuto + ":" + segundo;setTimeout("horas()",1000);}</script>
+
+	       			
+	       		<label id="temperatura">Temperatura: </label><span id="graus">25º</span>
+	       		<label id="dia">Dia 31-03-2016</label>
+	       		<label id="hora">Horas</label>
+
+	       		</form>
+		    </td>
+		    
+  </tr>
+
+  <tr>
+  	<td><button class="btnmenu" onclick="return trocar(submenuquarto,submenusala);" ><img src="image/CAMA.png"></button></td>
+  </tr>
+  
+   <tr >
+  	<td><button class="btnmenu" onclick="return trocarTEMP(submenusala,submenuquarto,conteudolampada);"><img src="image/COZINHA.png"></button></td>
+  </tr>
+   <tr >
+  	<td><button class="btnmenu" onclick="return trocarTEMP(submenusala,submenuquarto,conteudolampada);"><img src="image/cadeado.png"></button></td>
+  </tr>
+
+  <tr>
+  	<td><button class="btnmenu" onclick="return trocarTEMP(submenusala,submenuquarto,conteudolampada);"><img src="image/garagem.png"></button></td>
+  	
+  </tr>
+
+   </tr>
+</table>
+
+
+<script type="text/javascript">
+	
+	function trocar(obj,obj2,obj3){
+				if(obj.style.display == "none"){
+					obj.style.display = "block";
+				}else{
+					obj.style.display = "none";
+				}
+
+				if(obj2.style.display == "block"){
+					obj2.style.display = "none";
+				
+				}
+				if(obj3.style.display == "block"){
+					obj3.style.display = "none";
+				
+				}
+				
+			}
+
+			function trocarTEMP(obj,obj2,obj3){
+				if(obj.style.display == "block"){
+					obj.style.display = "none";
+				
+				}
+				if(obj2.style.display == "block"){
+					obj2.style.display = "none";
+				
+				}
+				if(obj3.style.display == "block"){
+					obj3.style.display = "none";
+				
+				}
+				
+			}
+
+
+
+
+</script>
+</body>
+</html>
